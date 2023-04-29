@@ -895,3 +895,133 @@ body {
     pointer-events: none;
     transition-duration: var(--time-transfor);
 }
+
+.title-modal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--brand-color-navyblue);
+}
+
+.box-form {
+    display: block;
+    margin-top: 16px;
+
+}
+
+.modal-form {}
+
+.madal-form-lable {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+
+}
+
+.madal-form-box {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: var(--anim-fast);
+    pointer-events: none;
+}
+
+.modal-form-input {
+
+    width: 360px;
+    height: 40px;
+    left: 0px;
+    top: 84px;
+    padding: 0 38px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.modal-textarea {
+    display: block;
+    width: 360px;
+    height: 120px;
+    left: 0px;
+    top: 216px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 16px;
+
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    padding-top: 8px;
+    padding-left: 16px;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+/* Agree with Privacy Policy */
+
+.madal-form-agree {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.text-agree {
+    display: block;
+    width: 338px;
+    height: 16px;
+
+    font-size: 12px;
+    line-height: 1.33;
+
+    letter-spacing: 0.04em;
+
+    color: #757575;
+}
+
+.linl-pp {
+    color: var(--brand-color-iris);
+}
+
+/* button send */
+
+.btn-modal-send {
+    display: flex;
+    margin: 0 auto;
+    min-width: 170px;
+    height: 51px;
+    border: none;
+
+    font-family: Roboto, sans-serif;
+    background: var(--brand-color-iris);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
+
+    color: var(--brand-color-white);
+    transition-property: background-color;
+    transition-duration: var(--time-transfor);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
