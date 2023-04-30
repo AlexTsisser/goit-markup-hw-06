@@ -660,13 +660,18 @@ body {
 }
 
 .subscribe-btn {
-    display: block;
+    display: flex;
     border: none;
     background-color: var(--brand-color-iris);
-    /* margin-left: 24px; */
     border-radius: 4px;
     width: 168px;
     height: 40px;
+
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-color-white);
+    fill: var(--brand-color-white);
+    gap: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition-property: background-color;
     transition-duration: var(--time-transfor);
@@ -889,6 +894,7 @@ body {
 
 .cross-icon {}
 
+/* JS Modal Window */
 .is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -896,6 +902,7 @@ body {
     transition-duration: var(--time-transfor);
 }
 
+/*  */
 .title-modal {
     display: block;
     text-align: center;
