@@ -647,7 +647,7 @@ body {
 .subscribe-input {
     display: block;
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--brand-color-white);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 8px 16px;
@@ -656,8 +656,12 @@ body {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--brand-color-white);
 
+}
+
+.subscribe-input::placeholder {
+    color: var(--brand-color-white);
 }
 
 .subscribe-btn {
@@ -885,14 +889,15 @@ body {
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition-property: box-shadow;
+    transition-property: background-color, fill, box-shadow;
     transition-duration: var(--time-transfor);
 }
 
 .btn-close:hover,
 .btn-close:focus {
     border: none;
-    background: #E7E9FC;
+    background-color: var(--brand-color-buttonhover);
+    fill: var(--brand-color-white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transition-duration: var(--time-transfor);
 }
@@ -961,17 +966,21 @@ body {
     padding: 0 38px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition-property: fill, border;
+    transition-property: border;
     transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus+.modal-form-icon,
+.modal-form-input:hover+.modal-form-icon {
 
-.modal-form-input:hover+.modal-form-icon,
-.modal-form-input:hover {
-    border: 1px solid var(--brand-color-iris);
     fill: var(--brand-color-iris);
+    transition-duration: var(--time-transfor);
+}
+
+.modal-form-input:hover,
+.modal-form-input:focus {
+    border-color: 1px solid var(--brand-color-iris);
     transition-duration: var(--time-transfor);
 }
 
