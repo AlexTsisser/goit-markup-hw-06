@@ -541,13 +541,15 @@ body {
 .footer-box {
     display: flex;
     align-items: baseline;
-    gap: 120px;
 
 }
 
+.footer-box-logo {
+    margin-right: 120px;
+}
 
 .social-box-footer {
-    /* margin-right: 692px; */
+    margin-right: 80px;
 }
 
 .social-media {
@@ -625,9 +627,7 @@ body {
 
 /* Subscrime zone */
 
-.footer-subscribe-box {
-    margin-left: -40px;
-}
+
 
 .title-subscribe {
     font-weight: 600;
@@ -657,6 +657,7 @@ body {
     line-height: 2;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
+
 }
 
 .subscribe-btn {
@@ -868,12 +869,13 @@ body {
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
 }
 
 .btn-close {
     position: absolute;
-    left: 360px;
+    top: 24px;
+    right: 24px;
     display: block;
 
     width: 24px;
@@ -889,6 +891,7 @@ body {
 
 .btn-close:hover,
 .btn-close:focus {
+    border: none;
     background: #E7E9FC;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transition-duration: var(--time-transfor);
@@ -908,7 +911,6 @@ body {
 .title-modal {
     display: block;
     text-align: center;
-    margin-top: 48px;
     width: 100%;
     font-weight: 600;
     font-size: 16px;
@@ -917,11 +919,6 @@ body {
 
     color: var(--brand-color-navyblue);
 }
-
-/* .box-form {
-    display: block;
-    margin-top: 16px; */
-
 
 
 .modal-form {
@@ -950,6 +947,10 @@ body {
     left: 10px;
     transform: translateY(-50%);
     fill: var(--brand-color-navyblue);
+    pointer-events: none;
+    transition-property: fill;
+    transition-duration: var(--time-transfor);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -966,6 +967,7 @@ body {
 }
 
 .modal-form-input:focus+.modal-form-icon,
+
 .modal-form-input:hover+.modal-form-icon,
 .modal-form-input:hover {
     border: 1px solid var(--brand-color-iris);
@@ -978,19 +980,19 @@ body {
     fill: var(--brand-color-iris);
 }
 
-
+.madal-text-box {
+    margin-bottom: 16px;
+}
 
 .modal-textarea {
     display: block;
     width: 360px;
     height: 120px;
-    left: 0px;
-    top: 216px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
-    margin-bottom: 16px;
+
 
     font-size: 12px;
     line-height: 14px;
