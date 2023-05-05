@@ -671,6 +671,7 @@ body {
     border-radius: 4px;
     width: 168px;
     height: 40px;
+    cursor: pointer;
 
     align-items: center;
     justify-content: center;
@@ -688,7 +689,7 @@ body {
     background-color: var(--brand-color-buttonhover);
 }
 
-.btn-subscribe-box {
+/* .btn-subscribe-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -696,7 +697,7 @@ body {
     fill: var(--brand-color-white);
     gap: 16px;
 
-}
+} */
 
 .text-btn-subscribe {
     padding: 0;
